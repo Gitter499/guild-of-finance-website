@@ -1,2 +1,0 @@
-(this["webpackJsonpguild-of-finance"]=this["webpackJsonpguild-of-finance"]||[]).push([[0],{10:function(e,n,c){"use strict";c.r(n);var t=c(1),i=c.n(t),r=c(3),s=c.n(r),o=(c(8),c(0));function d(){return Object(o.jsx)("div",{children:Object(o.jsx)("h2",{children:"Hello World"})})}var j=function(){return Object(o.jsx)("div",{className:"App",children:Object(o.jsx)(d,{})})};s.a.render(Object(o.jsx)(i.a.StrictMode,{children:Object(o.jsx)(j,{})}),document.getElementById("root"))},8:function(e,n,c){}},[[10,1,2]]]);
-//# sourceMappingURL=main.0ae518cc.chunk.js.map
