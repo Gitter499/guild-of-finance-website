@@ -34,33 +34,33 @@ export default function NavbarReusable() {
       <Nav.Item>
         <Nav.Link href ="#">
           <FontAwesomeIcon icon={faIgloo}/>
-            <h1 style= {{fontFamily: "Ranchers"}}>
+            <a style= {{fontFamily: "Ranchers"}} href="#">
               Home
-            </h1>
+            </a>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
         <Nav.Link href="#about">
         <FontAwesomeIcon icon={faChalkboardTeacher}/>
-            <h1 style= {{fontFamily: "Ranchers"}}>
+            <a style= {{fontFamily: "Ranchers"}} href="#about">
               About
-            </h1>
+            </a>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
         <Nav.Link href="#book">
         <FontAwesomeIcon icon={faBookOpen}/>
-            <h1 style= {{fontFamily: "Ranchers"}}>
+            <a style= {{fontFamily: "Ranchers"}} href="#book">
               Book
-            </h1>
+            </a>
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item >
-        <Nav.Link href="#author"> 
+        <Nav.Item  >
+        <Nav.Link > 
         <FontAwesomeIcon icon={faAt}/>
-            <h1 style= {{fontFamily: "Ranchers"}}>
+            <a style= {{fontFamily: "Ranchers"}} href="#author">
               Author
-            </h1>
+            </a>
         </Nav.Link>
       </Nav.Item>
       </Nav>
