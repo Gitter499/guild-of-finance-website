@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/NavbarReusable'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom'
+  
+  
+import {Route, Switch} from 'react-router-dom';
 
 import Home from './routes/Home'
 import Author from './routes/Author'
@@ -13,7 +16,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
 
 
-  let def = "guild-of-finance-website"
 
   return (
       //  <div className="">
@@ -22,19 +24,19 @@ function App() {
     // <Navbar/>
     
 
-    <Router>
+    <HashRouter>
   
         <Switch>
-          <Route exact path={`${def}/`} component={Home}/>
-          <Route path={`${def}/about`} component={About}/>
-          <Route path={`${def}/author`} component={Author}/>
-          <Route path={`${def}/book`} component={Book}/>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/author" component={Author}/>
+          <Route exact path="/book" component={Book}/>
           {/* <Route path="*" component={404} /> */}
           
 
         </Switch>
 
-     </Router>
+     </HashRouter>
   )
 }
 

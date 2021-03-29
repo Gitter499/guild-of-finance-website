@@ -18,7 +18,7 @@ let def: String = "guild-of-finance-website"
     <>
     <Navbar fixed = "top" collapseOnSelect bg="blue" variant="light" expand="sm">
       <Container>
-      <Navbar.Brand href={`${def}/`} style= {{fontFamily: "Ranchers", fontSize: "6vw"}}>
+      <Navbar.Brand href="#" style= {{fontFamily: "Ranchers", fontSize: "6vw"}}>
         <img
           alt=""
           src="https://gitter499.github.io/guild-of-finance-website/logo.png"
@@ -34,33 +34,41 @@ let def: String = "guild-of-finance-website"
       <Nav.Item>
         <Nav.Link>
           <FontAwesomeIcon icon={faIgloo}/>
-            <a style= {{fontFamily: "Ranchers"}} href={`${def}/`}>
-              Home
-            </a>
+            <h1 style= {{fontFamily: "Ranchers" }}>
+              <Link to ="/" style={{textDecoration: "none", color: "black"}}>
+                Home
+              </Link>
+            </h1>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-        <Nav.Link href="#about">
+        <Nav.Link>
         <FontAwesomeIcon icon={faChalkboardTeacher}/>
-            <a style= {{fontFamily: "Ranchers"}} href={`${def}/about`}>
-              About
-            </a>
+            <h1 style= {{fontFamily: "Ranchers"}}>
+            <Link to ="/about" style ={{textDecoration: "none", color: "black"}}>
+                About
+              </Link>
+            </h1>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-        <Nav.Link href="#book">
+        <Nav.Link>
         <FontAwesomeIcon icon={faBookOpen}/>
-            <a style= {{fontFamily: "Ranchers"  }} href={`${def}/book`}>
-              Book
-            </a>
+            <h1 style= {{fontFamily: "Ranchers"}}>
+            <Link to ="/book" style ={{textDecoration: "none", color: "black"}}>
+                Book
+              </Link>
+            </h1>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item >
-        <Nav.Link> 
+        <Nav.Link href="/author"> 
         <FontAwesomeIcon icon={faAt}/>
-            <a style= {{fontFamily: "Ranchers"}} href={`${def}/author`}>
-              Author
-            </a>
+            <h1 style= {{fontFamily: "Ranchers"}}>
+            <Link to ="/author" style ={{textDecoration: "none", color: "black"}}>
+                Author
+              </Link>
+            </h1>
         </Nav.Link>
       </Nav.Item>
       </Nav>
