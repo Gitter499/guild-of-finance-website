@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/guild-of-finance-website/static/css/main.26f9e6b0.chunk.css",
-    "main.js": "/guild-of-finance-website/static/js/main.0ae518cc.chunk.js",
-    "main.js.map": "/guild-of-finance-website/static/js/main.0ae518cc.chunk.js.map",
+    "main.css": "/guild-of-finance-website/static/css/main.215b97cc.chunk.css",
+    "main.js": "/guild-of-finance-website/static/js/main.0c5d0b1c.chunk.js",
+    "main.js.map": "/guild-of-finance-website/static/js/main.0c5d0b1c.chunk.js.map",
     "runtime-main.js": "/guild-of-finance-website/static/js/runtime-main.d424f670.js",
     "runtime-main.js.map": "/guild-of-finance-website/static/js/runtime-main.d424f670.js.map",
-    "static/js/2.57d0a1c2.chunk.js": "/guild-of-finance-website/static/js/2.57d0a1c2.chunk.js",
-    "static/js/2.57d0a1c2.chunk.js.map": "/guild-of-finance-website/static/js/2.57d0a1c2.chunk.js.map",
+    "static/css/2.fabbef47.chunk.css": "/guild-of-finance-website/static/css/2.fabbef47.chunk.css",
+    "static/js/2.55c24219.chunk.js": "/guild-of-finance-website/static/js/2.55c24219.chunk.js",
+    "static/js/2.55c24219.chunk.js.map": "/guild-of-finance-website/static/js/2.55c24219.chunk.js.map",
     "index.html": "/guild-of-finance-website/index.html",
-    "static/css/main.26f9e6b0.chunk.css.map": "/guild-of-finance-website/static/css/main.26f9e6b0.chunk.css.map",
-    "static/js/2.57d0a1c2.chunk.js.LICENSE.txt": "/guild-of-finance-website/static/js/2.57d0a1c2.chunk.js.LICENSE.txt"
+    "static/css/2.fabbef47.chunk.css.map": "/guild-of-finance-website/static/css/2.fabbef47.chunk.css.map",
+    "static/css/main.215b97cc.chunk.css.map": "/guild-of-finance-website/static/css/main.215b97cc.chunk.css.map",
+    "static/js/2.55c24219.chunk.js.LICENSE.txt": "/guild-of-finance-website/static/js/2.55c24219.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d424f670.js",
-    "static/js/2.57d0a1c2.chunk.js",
-    "static/css/main.26f9e6b0.chunk.css",
-    "static/js/main.0ae518cc.chunk.js"
+    "static/css/2.fabbef47.chunk.css",
+    "static/js/2.55c24219.chunk.js",
+    "static/css/main.215b97cc.chunk.css",
+    "static/js/main.0c5d0b1c.chunk.js"
   ]
 }
