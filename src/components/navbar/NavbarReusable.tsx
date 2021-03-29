@@ -4,53 +4,65 @@ import {Container, Nav, Navbar} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAt, faBookOpen, faChalkboardTeacher, faIgloo } from '@fortawesome/free-solid-svg-icons'
 import '../../assets/css/fonts.css'
+import {Link} from "react-router-dom"
 
 // import * as logo from "../../assets/images/logo.png"
 
 export default function NavbarReusable() {
 
 
+  
+
+
   return (
     <>
     <Navbar fixed = "top" collapseOnSelect bg="blue" variant="light" expand="sm">
       <Container>
-      <Navbar.Brand href="#" style= {{fontFamily: "Ranchers"}}>
+      <Navbar.Brand href="#" style= {{fontFamily: "Ranchers", fontSize: "6vw"}}>
         <img
           alt=""
-          src="public/logo512.png"
-          width="30"
-          height="30"
+          src="https://gitter499.github.io/guild-of-finance-website/logo.png"
+          width="100"
+          height="100"
           className="d-inline-block align-top"
         />{' '}
         Guild of Finance
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav className="mr-auto" defaultActiveKey="#">
-        <Nav.Link className="" href="#">
+      <Nav className="mr-auto">
+      <Nav.Item>
+        <Nav.Link href ="#">
           <FontAwesomeIcon icon={faIgloo}/>
             <h1 style= {{fontFamily: "Ranchers"}}>
               Home
             </h1>
           </Nav.Link>
-        <Nav.Link href="#about" eventKey = "about">
+        </Nav.Item>
+        <Nav.Item>
+        <Nav.Link href="#about">
         <FontAwesomeIcon icon={faChalkboardTeacher}/>
             <h1 style= {{fontFamily: "Ranchers"}}>
               About
             </h1>
           </Nav.Link>
-        <Nav.Link href="#book" eventKey = "book">
+        </Nav.Item>
+        <Nav.Item>
+        <Nav.Link href="#book">
         <FontAwesomeIcon icon={faBookOpen}/>
             <h1 style= {{fontFamily: "Ranchers"}}>
               Book
             </h1>
           </Nav.Link>
-        <Nav.Link href="#author" eventKey="author"> 
+        </Nav.Item>
+        <Nav.Item >
+        <Nav.Link href="#author"> 
         <FontAwesomeIcon icon={faAt}/>
             <h1 style= {{fontFamily: "Ranchers"}}>
               Author
             </h1>
         </Nav.Link>
+      </Nav.Item>
       </Nav>
     </Navbar.Collapse>
     </Container>

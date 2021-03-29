@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/NavbarReusable'
-import {BrowserRouter as Router, Route, Switch, HashRouter} from 'react-router-dom';
+import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Home from './routes/Home'
 import Author from './routes/Author'
@@ -19,30 +19,20 @@ function App() {
       //  </div>
     // <Navbar/>
     
-    <HashRouter>
-      <div className="App">
+
+    <Router basename="https://gitter499.github.io/guild-of-finance-website/">
+  
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/author" component={Author}/>
-          <Route path="/book" component={Book}/>
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/author" component={Author}/>
+          <Route exact path="/book" component={Book}/>
           {/* <Route path="*" component={404} /> */}
           
 
         </Switch>
-        <div className="container-app">
-        {/* home component goes here*/}
-        </div>
-        <div className="footer">
-       {/* footer component goes here*/}
-       </div>
 
-    { /* use other elements*/}
-      </div>
-
-      
-    </HashRouter>
-    
+     </Router>
   )
 }
 
