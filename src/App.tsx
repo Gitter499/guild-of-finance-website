@@ -1,15 +1,16 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/navbar/Navbar'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Navbar from './components/navbar/NavbarReusable'
+import {BrowserRouter as Router, Route, Switch, HashRouter} from 'react-router-dom';
 
 import Home from './routes/Home'
 import Author from './routes/Author'
 import Book from './routes/Book'
 import About from './routes/About'
 
-function App() {
+import 'bootstrap/dist/css/bootstrap.min.css'
 
+function App() {
 
 
   return (
@@ -17,13 +18,15 @@ function App() {
       //     Hello World
       //  </div>
     // <Navbar/>
-    <Router>
+    
+    <HashRouter>
       <div className="App">
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/about" component={About}/>
           <Route path="/author" component={Author}/>
           <Route path="/book" component={Book}/>
+          {/* <Route path="*" component={404} /> */}
           
 
         </Switch>
@@ -36,7 +39,10 @@ function App() {
 
     { /* use other elements*/}
       </div>
-    </Router>
+
+      
+    </HashRouter>
+    
   )
 }
 

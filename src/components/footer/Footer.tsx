@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function About() {
+export default function Footer() {
     return (
         <div>
-            Hello World
+            Footer
         </div>
     )
 }
