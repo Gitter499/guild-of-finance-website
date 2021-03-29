@@ -12,13 +12,13 @@ export default function NavbarReusable() {
 
 
   
-
+let def: String = "guild-of-finance-website"
 
   return (
     <>
     <Navbar fixed = "top" collapseOnSelect bg="blue" variant="light" expand="sm">
       <Container>
-      <Navbar.Brand href="#" style= {{fontFamily: "Ranchers", fontSize: "6vw"}}>
+      <Navbar.Brand href={`${def}/`} style= {{fontFamily: "Ranchers", fontSize: "6vw"}}>
         <img
           alt=""
           src="https://gitter499.github.io/guild-of-finance-website/logo.png"
@@ -32,9 +32,9 @@ export default function NavbarReusable() {
       <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="mr-auto">
       <Nav.Item>
-        <Nav.Link href ="#">
+        <Nav.Link>
           <FontAwesomeIcon icon={faIgloo}/>
-            <a style= {{fontFamily: "Ranchers"}} href="#">
+            <a style= {{fontFamily: "Ranchers"}} href={`${def}/`}>
               Home
             </a>
           </Nav.Link>
@@ -42,7 +42,7 @@ export default function NavbarReusable() {
         <Nav.Item>
         <Nav.Link href="#about">
         <FontAwesomeIcon icon={faChalkboardTeacher}/>
-            <a style= {{fontFamily: "Ranchers"}} href="#about">
+            <a style= {{fontFamily: "Ranchers"}} href={`${def}/about`}>
               About
             </a>
           </Nav.Link>
@@ -50,15 +50,15 @@ export default function NavbarReusable() {
         <Nav.Item>
         <Nav.Link href="#book">
         <FontAwesomeIcon icon={faBookOpen}/>
-            <a style= {{fontFamily: "Ranchers"}} href="#book">
+            <a style= {{fontFamily: "Ranchers"  }} href={`${def}/book`}>
               Book
             </a>
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item  >
-        <Nav.Link > 
+        <Nav.Item >
+        <Nav.Link> 
         <FontAwesomeIcon icon={faAt}/>
-            <a style= {{fontFamily: "Ranchers"}} href="#author">
+            <a style= {{fontFamily: "Ranchers"}} href={`${def}/author`}>
               Author
             </a>
         </Nav.Link>
