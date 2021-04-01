@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/guild-of-finance-website/static/css/main.215b97cc.chunk.css",
-    "main.js": "/guild-of-finance-website/static/js/main.c2105c6e.chunk.js",
-    "main.js.map": "/guild-of-finance-website/static/js/main.c2105c6e.chunk.js.map",
+    "main.css": "/guild-of-finance-website/static/css/main.f31150f7.chunk.css",
+    "main.js": "/guild-of-finance-website/static/js/main.9a6c436c.chunk.js",
+    "main.js.map": "/guild-of-finance-website/static/js/main.9a6c436c.chunk.js.map",
     "runtime-main.js": "/guild-of-finance-website/static/js/runtime-main.d424f670.js",
     "runtime-main.js.map": "/guild-of-finance-website/static/js/runtime-main.d424f670.js.map",
-    "static/css/2.fabbef47.chunk.css": "/guild-of-finance-website/static/css/2.fabbef47.chunk.css",
-    "static/js/2.643e9a6d.chunk.js": "/guild-of-finance-website/static/js/2.643e9a6d.chunk.js",
-    "static/js/2.643e9a6d.chunk.js.map": "/guild-of-finance-website/static/js/2.643e9a6d.chunk.js.map",
+    "static/css/2.6e23e9ba.chunk.css": "/guild-of-finance-website/static/css/2.6e23e9ba.chunk.css",
+    "static/js/2.095de78c.chunk.js": "/guild-of-finance-website/static/js/2.095de78c.chunk.js",
+    "static/js/2.095de78c.chunk.js.map": "/guild-of-finance-website/static/js/2.095de78c.chunk.js.map",
     "index.html": "/guild-of-finance-website/index.html",
-    "static/css/2.fabbef47.chunk.css.map": "/guild-of-finance-website/static/css/2.fabbef47.chunk.css.map",
-    "static/css/main.215b97cc.chunk.css.map": "/guild-of-finance-website/static/css/main.215b97cc.chunk.css.map",
-    "static/js/2.643e9a6d.chunk.js.LICENSE.txt": "/guild-of-finance-website/static/js/2.643e9a6d.chunk.js.LICENSE.txt"
+    "static/css/2.6e23e9ba.chunk.css.map": "/guild-of-finance-website/static/css/2.6e23e9ba.chunk.css.map",
+    "static/css/main.f31150f7.chunk.css.map": "/guild-of-finance-website/static/css/main.f31150f7.chunk.css.map",
+    "static/js/2.095de78c.chunk.js.LICENSE.txt": "/guild-of-finance-website/static/js/2.095de78c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d424f670.js",
-    "static/css/2.fabbef47.chunk.css",
-    "static/js/2.643e9a6d.chunk.js",
-    "static/css/main.215b97cc.chunk.css",
-    "static/js/main.c2105c6e.chunk.js"
+    "static/css/2.6e23e9ba.chunk.css",
+    "static/js/2.095de78c.chunk.js",
+    "static/css/main.f31150f7.chunk.css",
+    "static/js/main.9a6c436c.chunk.js"
   ]
 }

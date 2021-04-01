@@ -10,7 +10,6 @@ import Home from './routes/Home'
 import Author from './routes/Author'
 import Book from './routes/Book'
 import About from './routes/About'
-
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
