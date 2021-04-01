@@ -25,49 +25,54 @@ export default function NavbarReusable() {
             Guild of Finance
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-          <Navbar.Collapse id='responsive-navbar-nav'>
-            <Nav className='mr-auto'>
-              <Nav.Item>
-                <Nav.Link>
-                  <FontAwesomeIcon icon={faIgloo} />
-                  <h1 style={{ fontFamily: 'Ranchers' }}>
-                    <Link to='/' style={{ textDecoration: 'none', color: 'black' }}>
-                      Home
-                    </Link>
-                  </h1>
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link>
-                  <FontAwesomeIcon icon={faChalkboardTeacher} />
-                  <h1 style={{ fontFamily: 'Ranchers' }}>
-                    <Link to='/about' style={{ textDecoration: 'none', color: 'black' }}>
-                      About
-                    </Link>
-                  </h1>
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link>
-                  <FontAwesomeIcon icon={faBookOpen} />
-                  <h1 style={{ fontFamily: 'Ranchers' }}>
-                    <Link to='/book' style={{ textDecoration: 'none', color: 'black' }}>
-                      Book
-                    </Link>
-                  </h1>
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href='/author'>
-                  <FontAwesomeIcon icon={faAt} />
-                  <h1 style={{ fontFamily: 'Ranchers' }}>
-                    <Link to='/author' style={{ textDecoration: 'none', color: 'black' }}>
-                      Author
-                    </Link>
-                  </h1>
-                </Nav.Link>
-              </Nav.Item>
-            </Nav>
+          <Navbar.Collapse id='responsive-navbar-nav' onClick={() => {
+            console.log("Mobile user clicked nav toggle")
+          }}>
+
+            <div style={{background: 'white'}}>
+              <Nav className='mr-auto'>
+                <Nav.Item>
+                  <Nav.Link>
+                    <FontAwesomeIcon icon={faIgloo} />
+                    <h1 style={{ fontFamily: 'Ranchers' }}>
+                      <Link to='/' style={{ textDecoration: 'none', color: 'black' }}>
+                        Home
+                      </Link>
+                    </h1>
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link>
+                    <FontAwesomeIcon icon={faChalkboardTeacher} />
+                    <h1 style={{ fontFamily: 'Ranchers' }}>
+                      <Link to='/about' style={{ textDecoration: 'none', color: 'black' }}>
+                        About
+                      </Link>
+                    </h1>
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link>
+                    <FontAwesomeIcon icon={faBookOpen} />
+                    <h1 style={{ fontFamily: 'Ranchers' }}>
+                      <Link to='/book' style={{ textDecoration: 'none', color: 'black' }}>
+                        Book
+                      </Link>
+                    </h1>
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href='/author'>
+                    <FontAwesomeIcon icon={faAt} />
+                    <h1 style={{ fontFamily: 'Ranchers' }}>
+                      <Link to='/author' style={{ textDecoration: 'none', color: 'black' }}>
+                        Author
+                      </Link>
+                    </h1>
+                  </Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
