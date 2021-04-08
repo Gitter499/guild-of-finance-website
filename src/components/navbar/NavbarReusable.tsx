@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar } from 'react-bootstrap';
@@ -25,11 +24,13 @@ export default function NavbarReusable() {
             Guild of Finance
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-          <Navbar.Collapse id='responsive-navbar-nav' onClick={() => {
-            console.log("Mobile user clicked nav toggle")
-          }}>
-
-            <div style={{background: 'white'}}>
+          <Navbar.Collapse
+            id='responsive-navbar-nav'
+            onClick={() => {
+              console.log('Mobile user clicked nav toggle');
+            }}
+          >
+            <div style={{ background: 'white' }}>
               <Nav className='mr-auto'>
                 <Nav.Item>
                   <Nav.Link>
@@ -62,11 +63,11 @@ export default function NavbarReusable() {
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link href='/author'>
+                  <Nav.Link>
                     <FontAwesomeIcon icon={faAt} />
                     <h1 style={{ fontFamily: 'Ranchers' }}>
-                      <Link to='/author' style={{ textDecoration: 'none', color: 'black' }}>
-                        Author
+                      <Link to='/data' style={{ textDecoration: 'none', color: 'black' }}>
+                        Finanicial Data
                       </Link>
                     </h1>
                   </Nav.Link>

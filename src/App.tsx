@@ -7,7 +7,7 @@ import {HashRouter} from 'react-router-dom'
 import {Route, Switch} from 'react-router-dom';
 
 import Home from './routes/Home'
-import Author from './routes/Author'
+import Data from './routes/Data'
 import Book from './routes/Book'
 import About from './routes/About'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -28,7 +28,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/about" component={About}/>
-          <Route exact path="/author" component={Author}/>
+          <Route exact path="/data" component={Data}/>
           <Route exact path="/book" component={Book}/>
           {/* <Route path="*" component={404} /> */}
           
