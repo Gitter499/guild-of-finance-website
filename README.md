@@ -6,16 +6,14 @@
 
 ## Made using React (typescript) and supporting libraries
 
+[Link](https://gitter499.github.io/guild-of-finance-website/#/)
 
 ## Hypestack
 
-# Storybook for components
+# React (TSX) for frontend
 
-# React (TS) for frontend
-
-# Redux for state management
-
-# Tailwind for styling
+# Bootstrap for styling
 
 # React Router for routing
+
 
