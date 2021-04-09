@@ -8,7 +8,7 @@ import '../../assets/css/fixes.css';
 import '../../assets/css/fonts.css';
 export default function Footer() {
   return (
-    <Container fluid className='fixed-bottom'>
+    <Container fluid className='fixed-bottom bg-white'>
       <Row>
         <Col>
           <Nav>
