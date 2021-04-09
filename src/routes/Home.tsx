@@ -9,8 +9,12 @@ import { useHistory } from 'react-router-dom';
 export default function Home() {
   const history = useHistory();
 
-  const handleClick = () => {
-    history.push('/about');
+  const handleClick = (type: String) => {
+    if (type === 'book') {
+      history.push('/book');
+    } else if (type === 'about') {
+      history.push('/about');
+    }
   };
   return (
     <div>
@@ -37,7 +41,7 @@ export default function Home() {
           will regret later.
         </p>
         <p>
-          <Button onClick={handleClick} variant='secondary'>
+          <Button onClick={() => handleClick('about')} variant='secondary'>
             Learn more
           </Button>
           <hr />
@@ -53,7 +57,7 @@ export default function Home() {
           <ListGroup.Item>How The Stock Market Works?</ListGroup.Item>
         </ListGroup>
         <hr />
-        <Button style={{ marginTop: '20px', marginBottom: '20px' }} onClick={handleClick} variant='secondary'>
+        <Button style={{ marginTop: '20px', marginBottom: '20px' }} onClick={() => handleClick('book')} variant='secondary'>
           Read the book!
         </Button>
         <hr />
