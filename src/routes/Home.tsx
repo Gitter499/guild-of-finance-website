@@ -16,6 +16,7 @@ export default function Home() {
       history.push('/about');
     }
   };
+  
   return (
     <div>
       <NavbarReusable />

@@ -19,12 +19,15 @@ export default function Book() {
   return (
     <>
       <NavbarReusable />
+      <hr/>
       <div className='d-grid align-items-center'>
+
         <section>
-          <article style={{ padding: '40px 40px', marginBottom: '100px', fontFamily: 'Playfair Display' }}>
+          <article style={{ padding: '40px 40px', marginBottom: '100px', marginTop: '100px', fontFamily: 'Playfair Display' }}>
             <ReactMarkdown source={article} />
           </article>
         </section>
+        <hr/>
       </div>
 
       <Footer />
