@@ -17,7 +17,7 @@ export default function NavbarReusable() {
             <Navbar.Brand href='#' style={{ fontFamily: 'Ranchers', fontSize: '6vw' }}>
               <img
                 alt=''
-                src='https://gitter499.github.io/guild-of-finance-website/logo.png'
+                src='https://gitter499.github.io/guild-of-finance-website/final_logo.png'
                 width='80'
                 height='80'
                 className='d-inline-block align-top'

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Footer from '../components/footer/Footer';
 import NavbarReusable from '../components/navbar/NavbarReusable';
-import file from '../components/book/markdown/gof_file_semifinal.md';
+import file from '../components/book/markdown/gof_final.md';
 
 import ReactMarkdown from 'react-markdown';
 
