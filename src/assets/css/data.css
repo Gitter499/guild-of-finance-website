@@ -1,6 +1,7 @@
 .search-bar {
+  float: center;
   display: block;
-  margin: 30vh;
-  height: 0px;
-  
+  text-align: center;
+  padding-top: 30px;
+  text-decoration: none;
 }
