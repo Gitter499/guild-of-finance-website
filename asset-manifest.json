@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/guild-of-finance-website/static/css/main.d83357ac.chunk.css",
-    "main.js": "/guild-of-finance-website/static/js/main.b46a194c.chunk.js",
-    "main.js.map": "/guild-of-finance-website/static/js/main.b46a194c.chunk.js.map",
+    "main.js": "/guild-of-finance-website/static/js/main.f6cd0701.chunk.js",
+    "main.js.map": "/guild-of-finance-website/static/js/main.f6cd0701.chunk.js.map",
     "runtime-main.js": "/guild-of-finance-website/static/js/runtime-main.d424f670.js",
     "runtime-main.js.map": "/guild-of-finance-website/static/js/runtime-main.d424f670.js.map",
     "static/css/2.6e23e9ba.chunk.css": "/guild-of-finance-website/static/css/2.6e23e9ba.chunk.css",
@@ -12,13 +12,15 @@
     "static/css/2.6e23e9ba.chunk.css.map": "/guild-of-finance-website/static/css/2.6e23e9ba.chunk.css.map",
     "static/css/main.d83357ac.chunk.css.map": "/guild-of-finance-website/static/css/main.d83357ac.chunk.css.map",
     "static/js/2.c5905df5.chunk.js.LICENSE.txt": "/guild-of-finance-website/static/js/2.c5905df5.chunk.js.LICENSE.txt",
-    "static/media/gof_final.267bfaf7.md": "/guild-of-finance-website/static/media/gof_final.267bfaf7.md"
+    "static/media/gof_final.267bfaf7.md": "/guild-of-finance-website/static/media/gof_final.267bfaf7.md",
+    "static/media/homepage-image.b6a5f9f5.jpg": "/guild-of-finance-website/static/media/homepage-image.b6a5f9f5.jpg",
+    "static/media/homepage-image_2.f6c389ed.jpg": "/guild-of-finance-website/static/media/homepage-image_2.f6c389ed.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d424f670.js",
     "static/css/2.6e23e9ba.chunk.css",
     "static/js/2.c5905df5.chunk.js",
     "static/css/main.d83357ac.chunk.css",
-    "static/js/main.b46a194c.chunk.js"
+    "static/js/main.f6cd0701.chunk.js"
   ]
 }
