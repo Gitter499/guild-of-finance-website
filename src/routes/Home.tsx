@@ -36,17 +36,6 @@ export default function Home() {
           {' '}
           {'print: String >'} Hello world, hello friends
         </h1>
-        {/* First image, resizes based on view width, responsibe */}
-        <img src={image} alt='' style={{ height: '60vw', width: '60vw', paddingTop: '80px', borderRadius: '12px' }} />
-        {/* Credit for the image */}
-        <h6 style={{ padding: '10px' }}>
-          <a
-            style={{ color: 'green' }}
-            href='https://unsplash.com/photos/VrJnsLH2nOY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink'
-          >
-            Image Credit{' '}
-          </a>
-        </h6>
         {/* Welcoming and other info */}
         <h1 style={{ paddingTop: '80px', paddingBottom: '15px' }}>WELCOME</h1>
         <p
@@ -63,6 +52,18 @@ export default function Home() {
           passion project to teach (or at least teach what I know) basic finance to young adults so they don't end up making mistakes they
           will regret later.
         </p>
+        {/* First image, resizes based on view width, responsibe */}
+        <img src={image} alt='' style={{ height: '60vw', width: '60vw', paddingTop: '80px', borderRadius: '12px' }} />
+        {/* Credit for the image */}
+        <h6 style={{ padding: '10px' }}>
+          <a
+            style={{ color: 'green' }}
+            href='https://unsplash.com/photos/VrJnsLH2nOY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink'
+          >
+            Image Credit{' '}
+          </a>
+        </h6>
+        
         <p>
           <Button onClick={() => handleClick('about')} variant='secondary'>
             Learn more

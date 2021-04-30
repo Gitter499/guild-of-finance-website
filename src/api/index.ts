@@ -10,23 +10,23 @@ export const searchStocks = async (query: String) => {
 };
 
 // useless info, was just testing stuff out because why not
-export const companyOverview = async (symbol: String) => {
-  const { data } = await axios
-    .get(`https://www.alphavantage.co/query?function=OVERVIEW&symbol=${symbol}&apikey=${apikey}`)
-    .then(data => data)
-    .catch(e => e);
-  const overview = {
-    fullName: data['Name'],
-    description: data['Description'],
-    exchange: data['Exchange'],
-    sector: data['Sector'],
-    industry: data['Industry'],
-    address: data['Address'],
-    employees: data['FullTimeEmployees'],
-    marketCap: data['MarketCapitalization'],
-    high: data['52WeekHigh'],
-    low: data['52WeekLow'],
-  };
+// export const companyOverview = async (symbol: String) => {
+//   const { data } = await axios
+//     .get(`https://www.alphavantage.co/query?function=OVERVIEW&symbol=${symbol}&apikey=${apikey}`)
+//     .then(data => data)
+//     .catch(e => e);
+//   const overview = {
+//     fullName: data['Name'],
+//     description: data['Description'],
+//     exchange: data['Exchange'],
+//     sector: data['Sector'],
+//     industry: data['Industry'],
+//     address: data['Address'],
+//     employees: data['FullTimeEmployees'],
+//     marketCap: data['MarketCapitalization'],
+//     high: data['52WeekHigh'],
+//     low: data['52WeekLow'],
+//   };
 
-  return overview;
-};
+//   return overview;
+// };
