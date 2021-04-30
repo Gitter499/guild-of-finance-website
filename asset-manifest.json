@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/guild-of-finance-website/static/css/main.d83357ac.chunk.css",
-    "main.js": "/guild-of-finance-website/static/js/main.6cfb2ff8.chunk.js",
-    "main.js.map": "/guild-of-finance-website/static/js/main.6cfb2ff8.chunk.js.map",
+    "main.js": "/guild-of-finance-website/static/js/main.77701f42.chunk.js",
+    "main.js.map": "/guild-of-finance-website/static/js/main.77701f42.chunk.js.map",
     "runtime-main.js": "/guild-of-finance-website/static/js/runtime-main.d424f670.js",
     "runtime-main.js.map": "/guild-of-finance-website/static/js/runtime-main.d424f670.js.map",
     "static/css/2.6e23e9ba.chunk.css": "/guild-of-finance-website/static/css/2.6e23e9ba.chunk.css",
-    "static/js/2.7e1aa4f4.chunk.js": "/guild-of-finance-website/static/js/2.7e1aa4f4.chunk.js",
-    "static/js/2.7e1aa4f4.chunk.js.map": "/guild-of-finance-website/static/js/2.7e1aa4f4.chunk.js.map",
+    "static/js/2.c1413891.chunk.js": "/guild-of-finance-website/static/js/2.c1413891.chunk.js",
+    "static/js/2.c1413891.chunk.js.map": "/guild-of-finance-website/static/js/2.c1413891.chunk.js.map",
     "index.html": "/guild-of-finance-website/index.html",
     "static/css/2.6e23e9ba.chunk.css.map": "/guild-of-finance-website/static/css/2.6e23e9ba.chunk.css.map",
     "static/css/main.d83357ac.chunk.css.map": "/guild-of-finance-website/static/css/main.d83357ac.chunk.css.map",
-    "static/js/2.7e1aa4f4.chunk.js.LICENSE.txt": "/guild-of-finance-website/static/js/2.7e1aa4f4.chunk.js.LICENSE.txt",
+    "static/js/2.c1413891.chunk.js.LICENSE.txt": "/guild-of-finance-website/static/js/2.c1413891.chunk.js.LICENSE.txt",
     "static/media/404image.1980dc54.png": "/guild-of-finance-website/static/media/404image.1980dc54.png",
     "static/media/dataPageImage.47e496bc.png": "/guild-of-finance-website/static/media/dataPageImage.47e496bc.png",
     "static/media/gof_final.267bfaf7.md": "/guild-of-finance-website/static/media/gof_final.267bfaf7.md",
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.d424f670.js",
     "static/css/2.6e23e9ba.chunk.css",
-    "static/js/2.7e1aa4f4.chunk.js",
+    "static/js/2.c1413891.chunk.js",
     "static/css/main.d83357ac.chunk.css",
-    "static/js/main.6cfb2ff8.chunk.js"
+    "static/js/main.77701f42.chunk.js"
   ]
 }
