@@ -11,7 +11,7 @@ export const searchStocks = async (query: String) => {
 export const companyOverview = async (symbol: String) => {
   const { data } = await axios
     .get(`https://www.alphavantage.co/query?function=OVERVIEW&symbol=${symbol}&apikey=${apikey}`)
-    .then(data => {data})
+    .then(data => data)
     .catch(e => e);
   const overview = {
     fullName: data['Name'],

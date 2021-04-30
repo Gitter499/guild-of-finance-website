@@ -28,14 +28,14 @@ export default function Home() {
         style={{ fontFamily: 'Playfair Display' }}
         className='d-flex flex-column min-vh-100 justify-content-center align-items-center'
       >
-        <h1 style={{ color: 'green', fontFamily: 'Ranchers', paddingTop: '180px', textAlign: 'center' }}>
+        <h1 style={{ color: 'green', fontFamily: 'Ranchers', paddingTop: '30vh', textAlign: 'center' }}>
           {' '}
           {'print: String >'} Hello world, hello friends
         </h1>
         <img
           src={image}
           alt=''
-          style={{ height: '70vw', width: '70vw', paddingTop: '80px', borderRadius: '12px' }}
+          style={{ height: '60vw', width: '60vw', paddingTop: '80px', borderRadius: '12px' }}
         />
         <h6 style={{ padding: '10px' }}>
           <a
