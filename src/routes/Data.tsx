@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/data.css';
 
 import { searchStocks } from '../api/index';
-import { Card, Jumbotron } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 export default function Data() {
   // states for getting query from user and loading logic
@@ -23,13 +23,23 @@ export default function Data() {
   const [display, setDisplay] = useState<any[]>([]);
   const [resultLength, setResultLength] = useState(0);
 
-  const [extraInfo, setExtraInfo] = useState([]);
+  const [length, setLength] = useState(0);
+
   // Called when form is submitted, async function
+
+  const [exists, setExists] = useState(true);
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     // gets info and sets all states
     const res = await searchStocks(query);
+
+    if (!res.bestMatches.length) {
+      setExists(false);
+      alert('No stocks found');
+    } else {
+      setLength(res.bestMatches.length);
+    }
 
     // console.log(res?.bestMatches); was used for debugging purposes, leaving here to remember the pain
 
@@ -41,20 +51,13 @@ export default function Data() {
 
   // Recommended Card styles
 
-  const recStyles = {
-    margin: '30px',
-    borderRadius: '10px',
-    textAlign: 'center',
-    width: '55vw',
-  };
-
   return (
     <>
       {/* Navbar */}
       <NavbarReusable />
       <div className='d-flex flex-column min-vh-100 justify-content-center align-items-center overflow-auto'>
         {/* Header */}
-        <h1 style={{ fontFamily: 'Ranchers', paddingTop: '150px', textAlign: 'center' }}> Search Stock Data</h1>
+        <h1 style={{ fontFamily: 'Ranchers', marginTop: '200px', textAlign: 'center' }}> Search Stock Data</h1>
         {/* Search image */}
         <img src={image} alt='' style={{ height: '50vh', width: '45vh', paddingTop: '30px', borderRadius: '12px' }} />
         {/* Credit for the image */}
@@ -93,11 +96,58 @@ export default function Data() {
 
         {/* Recommended */}
 
-        <div style={{ fontFamily: 'Playfair Display', textAlign: 'center' }}>
-          {!loading &&
-            (display.length >= 4 ? (
-              <div>
-                <h1>Recommended Stocks</h1>
+        {exists && (
+          <div style={{ fontFamily: 'Playfair Display', textAlign: 'center' }}>
+            {!loading &&
+              (length >= 6 ? (
+                <div>
+                  <h1>Recommended Stocks</h1>
+                  <Card
+                    style={{
+                      margin: '30px',
+                      borderRadius: '10px',
+                      textAlign: 'center',
+                      width: '55vw',
+                    }}
+                  >
+                    <h2>{display[4]['2. name']}</h2>
+                  </Card>
+                  <Card
+                    style={{
+                      margin: '30px',
+                      borderRadius: '10px',
+                      textAlign: 'center',
+                      width: '55vw',
+                    }}
+                  >
+                    <h2>{display[2]['2. name']}</h2>
+                  </Card>
+                  <Card
+                    style={{
+                      margin: '30px',
+                      borderRadius: '10px',
+                      textAlign: 'center',
+                      width: '55vw',
+                    }}
+                  >
+                    <h2>{display[3]['2. name']}</h2>
+                  </Card>
+                </div>
+              ) : length >= 2 ? (
+                <div>
+                  <h1>Recommended Stocks</h1>
+                  <Card
+                    style={{
+                      margin: '30px',
+                      borderRadius: '10px',
+                      textAlign: 'center',
+                      width: '55vw',
+                    }}
+                  >
+                    <h2>{display[0]['2. name']}</h2>
+                  </Card>
+                </div>
+              ) : length >= 2 ? (
                 <Card
                   style={{
                     margin: '30px',
@@ -106,66 +156,25 @@ export default function Data() {
                     width: '55vw',
                   }}
                 >
-                  <h2>{display[Math.floor(Math.random() * display.length)]['2. name']}</h2>
+                  <h2>{display[1]['2. name']}</h2>
                 </Card>
-                <Card
-                  style={{
-                    margin: '30px',
-                    borderRadius: '10px',
-                    textAlign: 'center',
-                    width: '55vw',
-                  }}
-                >
-                  <h2>{display[Math.floor(Math.random() * display.length)]['2. name']}</h2>
-                </Card>
-                <Card
-                  style={{
-                    margin: '30px',
-                    borderRadius: '10px',
-                    textAlign: 'center',
-                    width: '55vw',
-                  }}
-                >
-                  <h2>{display[Math.floor(Math.random() * display.length)]['2. name']}</h2>
-                </Card>
-              </div>
-            ) : display.length >= 2 ? (
-              <Card
-                style={{
-                  margin: '30px',
-                  borderRadius: '10px',
-                  textAlign: 'center',
-                  width: '55vw',
-                }}
-              >
-                <h2>{display[Math.floor(Math.random() * 2)]['2. name']}</h2>
-              </Card>
-            ) : display.length >= 2 ? (
-              <Card
-                style={{
-                  margin: '30px',
-                  borderRadius: '10px',
-                  textAlign: 'center',
-                  width: '55vw',
-                }}
-              >
-                <h2>{display[Math.floor(Math.random() * 2)]['2. name']}</h2>
-              </Card>
-            ) : (
-              <Card
-                style={{
-                  margin: '30px',
-                  borderRadius: '10px',
-                  textAlign: 'center',
-                  width: '55vw',
-                }}
-              >
-                <h2>{display[0]['2. name']}</h2>
-              </Card>
-            ))}
-        </div>
-
-        {/* <Jumbotron></Jumbotron> */}
+              ) : (
+                <div>
+                  <h1>Recommended Stocks</h1>
+                  <Card
+                    style={{
+                      margin: '30px',
+                      borderRadius: '10px',
+                      textAlign: 'center',
+                      width: '55vw',
+                    }}
+                  >
+                    <h2>{display[0]['2. name']}</h2>
+                  </Card>
+                </div>
+              ))}
+          </div>
+        )}
 
         {/* Dynamcally load all the resulrs and display the data */}
         {loading
@@ -177,23 +186,19 @@ export default function Data() {
                   <>
                     {/* Main div */}
 
-                    <div
-                      style={
-                        {
-                          // display: 'flex',
-                          // flexDirection: 'column',
-                          // justifyContent: 'center',
-                          // alignItems: 'center',
-                          // textAlign: 'center',
-                          // height: '100vh',
-                          // fontFamily: 'Playfair Display',
-                        }
-                      }
-                      key={index}
-                    >
+                    <div key={index}>
                       {/* Shows each stock as a card */}
                       <hr />
-                      <Card style={{ width: '55vw', textAlign: 'center', borderRadius: '10px', borderColor: 'black', margin: '10px' }}>
+                      <Card
+                        style={{
+                          width: '55vw',
+                          textAlign: 'center',
+                          borderRadius: '10px',
+                          borderColor: 'black',
+                          margin: '10px',
+                          marginBottom: '90px',
+                        }}
+                      >
                         {/* All useful data is displayed for each match */}
                         <h1>{elem['1. symbol']} </h1>
                         {/* Divider stuff to make it look pretty (entropy code) */}
@@ -229,10 +234,6 @@ export default function Data() {
                           <div>
                             <strong>Currency: </strong>
                             {elem['8. currency']}
-                          </div>
-                          <hr />
-                          <div>
-                            <strong>High: </strong>
                           </div>
                         </div>
                       </Card>

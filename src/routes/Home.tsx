@@ -53,7 +53,7 @@ export default function Home() {
           will regret later.
         </p>
         {/* First image, resizes based on view width, responsibe */}
-        <img src={image} alt='' style={{ height: '60vw', width: '60vw', paddingTop: '80px', borderRadius: '12px' }} />
+        <img src={image} alt='' style={{ height: '60vw', width: '60vw', marginTop: '80px', borderRadius: '12px' }} />
         {/* Credit for the image */}
         <h6 style={{ padding: '10px' }}>
           <a
@@ -63,7 +63,7 @@ export default function Home() {
             Image Credit{' '}
           </a>
         </h6>
-        
+
         <p>
           <Button onClick={() => handleClick('about')} variant='secondary'>
             Learn more
