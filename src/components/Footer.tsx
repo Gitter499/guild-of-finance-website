@@ -16,6 +16,7 @@ export default function Footer() {
             {/* Links */}
             <Nav.Item>
               <Nav.Link href='https://www.instagram.com/rafayel.19/' style={{ color: 'black' }}>
+                {/* Icom */}
                 <FontAwesomeIcon icon={faInfoCircle} />
                 <p style={{ fontFamily: 'Ranchers' }}>Instagram</p>
               </Nav.Link>

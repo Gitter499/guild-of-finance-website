@@ -9,16 +9,19 @@ import '../assets/css/fonts.css';
 export default function About() {
   return (
     <>
+      {/* Navbar */}
       <NavbarReusable />
-
+      {/* Main jumbo */}
       <Jumbotron className='d-flex flex-column min-vh-100 justify-content-center align-items-center overflow-auto'>
         <h2 style={{ marginTop: '220px', fontFamily: 'Playfair Display', color: 'green' }}>A totally accurate picture of me</h2>
+        {/* Loads image */}
         <img
           src='https://gitter499.github.io/guild-of-finance-website/Amirkhanyan_Rafayel_FinalPortrait.jpg'
           alt=''
           style={{ height: '15vw', width: '15vw', paddingTop: '20px', borderRadius: '12px', alignContent: 'center' }}
         />
         <hr />
+        {/* Basic markup complimented with simple inline styles */}
         <h1 style={{ fontFamily: 'Ranchers', paddingTop: '30px', paddingBottom: '15px', textAlign: 'center' }}>
           What is the "Guild Of Finance?"
         </h1>

@@ -4,8 +4,8 @@ import Footer from '../components/Footer';
 import NavbarReusable from '../components/NavbarReusable';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import image from  '../assets/images/homepage-image.jpg'
-import image_2 from '../assets/images/homepage-image_2.jpg'
+import image from '../assets/images/homepage-image.jpg';
+import image_2 from '../assets/images/homepage-image_2.jpg';
 import { useHistory } from 'react-router-dom';
 
 export default function Home() {
@@ -21,22 +21,24 @@ export default function Home() {
 
   return (
     <div>
+      {/* Navbar */}
       <NavbarReusable />
+      {/* Footer */}
       <Footer />
 
+      {/* Jumbo, sets font for all child elements and centers in the page */}
       <Jumbotron
         style={{ fontFamily: 'Playfair Display' }}
         className='d-flex flex-column min-vh-100 justify-content-center align-items-center'
       >
+        {/* Styled intro */}
         <h1 style={{ color: 'green', fontFamily: 'Ranchers', paddingTop: '30vh', textAlign: 'center' }}>
           {' '}
           {'print: String >'} Hello world, hello friends
         </h1>
-        <img
-          src={image}
-          alt=''
-          style={{ height: '60vw', width: '60vw', paddingTop: '80px', borderRadius: '12px' }}
-        />
+        {/* First image, resizes based on view width, responsibe */}
+        <img src={image} alt='' style={{ height: '60vw', width: '60vw', paddingTop: '80px', borderRadius: '12px' }} />
+        {/* Credit for the image */}
         <h6 style={{ padding: '10px' }}>
           <a
             style={{ color: 'green' }}
@@ -45,6 +47,7 @@ export default function Home() {
             Image Credit{' '}
           </a>
         </h6>
+        {/* Welcoming and other info */}
         <h1 style={{ paddingTop: '80px', paddingBottom: '15px' }}>WELCOME</h1>
         <p
           style={{
@@ -66,6 +69,7 @@ export default function Home() {
           </Button>
           <hr />
         </p>
+        {/* The list group/table, all proportioning done with inline style margin and padding */}
         <h2>What You Will Learn</h2>
         <hr />
         <ListGroup>
@@ -77,16 +81,14 @@ export default function Home() {
           <ListGroup.Item>How The Stock Market Works?</ListGroup.Item>
         </ListGroup>
         <hr />
+        {/* Button with divider to split our info */}
         <Button style={{ marginTop: '20px', marginBottom: '20px' }} onClick={() => handleClick('book')} variant='secondary'>
           Read the book!
         </Button>
         <hr />
-        <img
-          src={image_2}
-          alt=''
-          style={{ height: '60vw', width: '60vw', paddingTop: '40px', borderRadius: '12px' }}
-        />
-
+        {/* Second image */}
+        <img src={image_2} alt='' style={{ height: '60vw', width: '60vw', paddingTop: '40px', borderRadius: '12px' }} />
+        {/* Image attribution */}
         <h6 style={{ padding: '10px' }}>
           <a
             style={{ color: 'green' }}
@@ -95,6 +97,7 @@ export default function Home() {
             Image Credit{' '}
           </a>
         </h6>
+        {/* Last piece of info on the home page */}
         <h2 style={{ marginBottom: '20px', marginTop: '70px' }}>Why read the book?</h2>
         <p
           style={{
