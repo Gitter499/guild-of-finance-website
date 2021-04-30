@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import NavbarReusable from '../components/NavbarReusable';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import image from '../assets/images/homepage-image.jpg';
+import image from '../assets/images/homepage-image_compressed.jpg';
 import image_2 from '../assets/images/homepage-image_2.jpg';
 import { useHistory } from 'react-router-dom';
 
