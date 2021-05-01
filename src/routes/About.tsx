@@ -18,7 +18,7 @@ export default function About() {
         <img
           src='https://gitter499.github.io/guild-of-finance-website/Amirkhanyan_Rafayel_FinalPortrait.jpg'
           alt=''
-          style={{ height: '15vw', width: '15vw', paddingTop: '20px', borderRadius: '12px', alignContent: 'center' }}
+          style={{ height: '30vw', width: '30vw', marginTop: '20px', borderRadius: '12px', alignContent: 'center' }}
         />
         <hr />
         {/* Basic markup complimented with simple inline styles */}

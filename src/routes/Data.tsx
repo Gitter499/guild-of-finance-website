@@ -197,6 +197,7 @@ export default function Data() {
                           borderColor: 'black',
                           margin: '10px',
                           marginBottom: '90px',
+                          fontFamily: 'Playfair Display',
                         }}
                       >
                         {/* All useful data is displayed for each match */}
@@ -231,7 +232,7 @@ export default function Data() {
                             {elem['7. timezone']}
                           </div>
                           <hr />
-                          <div>
+                          <div style={{ marginBottom: '3px' }}>
                             <strong>Currency: </strong>
                             {elem['8. currency']}
                           </div>
