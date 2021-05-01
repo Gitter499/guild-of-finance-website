@@ -3,6 +3,8 @@ import Footer from '../components/Footer';
 import NavbarReusable from '../components/NavbarReusable';
 import file from '../components/markdown/gof_final.md';
 
+import image from '../assets/images/otherDataImageRed.png';
+
 import ReactMarkdown from 'react-markdown';
 
 export default function Book() {

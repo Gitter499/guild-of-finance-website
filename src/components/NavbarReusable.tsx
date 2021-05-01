@@ -6,6 +6,8 @@ import { faAt, faBookOpen, faChalkboardTeacher, faIgloo } from '@fortawesome/fre
 import '../assets/css/fonts.css';
 import { Link } from 'react-router-dom';
 
+import image_logo from '../assets/images/final_logo.png';
+
 // import * as logo from "../../assets/images/logo.png"
 
 export default function NavbarReusable() {
@@ -15,14 +17,7 @@ export default function NavbarReusable() {
         <Navbar fixed='top' collapseOnSelect bg='blue' variant='light' expand='sm' className='bg-white'>
           <Container style={{ marginBottom: '12px' }}>
             <Navbar.Brand href='#' style={{ fontFamily: 'Ranchers', fontSize: '6vw' }}>
-              <img
-                alt=''
-                src='https://raw.githubusercontent.com/Gitter499/guild-of-finance-website/master/public/final_logo.png'
-                width='80'
-                height='80'
-                className='d-inline-block align-top'
-              />{' '}
-              Guild of Finance
+              <img alt='' src={image_logo} width='80' height='80' className='d-inline-block align-top' /> Guild of Finance
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse
